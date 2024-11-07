@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>JS Clock</title>
+   
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+   
+    <link rel="stylesheet" href="assets/css/clock.css" />
+  </head>
+  <body>
+    <header>
+     <nav class="">
+      <a class="btn btn-info git" target="_blank" href="https://github.com/Vinod-brs/JsClock">GIT REPO</a><h2>JS CLOCK </h2> <button onclick="darkLight()" class="btn btn-dark dark-light" id="dark-light">DARK MODE</button>
+     </nav>
+    </header>
+
+    <main role="main" style="margin-bottom: 20px">
+      <div class="clock">
+        <div class="hourHand"></div>
+        <div class="minuteHand"></div>
+        <div class="secondHand"><div></div><span>^</span></div>
+        <div class="center"></div>
+        <ul>
+          <li><span>1</span></li>
+          <li><span>2</span></li>
+          <li><span>3</span></li>
+          <li><span>4</span></li>
+          <li><span>5</span></li>
+          <li><span>6</span></li>
+          <li><span>7</span></li>
+          <li><span>8</span></li>
+          <li><span>9</span></li>
+          <li><span>10</span></li>
+          <li><span>11</span></li>
+          <li><span>12</span></li>
+        </ul>
+      </div>
+    </main>
+
+
+    <div class="container digital-time p-2"><h2 id="hours">HH</h2> <h2> : </h2> <h2 id="minutes">MM</h2> <h2> : </h2> <h2 id="seconds">SS</h2> <h2 id="ampm"></h2></div>
+
+    <div class="hour-type"><button onclick="sethour()" id="hourtype" class="sethour btn btn-outline-success">12 Hours</button></div>
+   
+
+    <footer style="margin-top: 3.4%" class="footer footer-dark p-4" >
+      <div class="d-flex justify-content-center px-5">
+        
+          <div>
+            <button
+              onclick="setTheme('#1A4B84')"
+              class="theme-switch theme-switch-chathams_blue"
+            ></button>
+            <button
+              onclick="setTheme('#661197')"
+              class="theme-switch theme-switch-tamarillo"
+            ></button>
+            <button
+              onclick="setTheme('#1A4B34')"
+              class="theme-switch theme-switch-green_sea"
+            ></button>
+          </div>
+      </div>
+    </footer>
+    <script src="assets/js/script.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,267 @@
+:root {
+  --primary-color: #1a4b84;
+  --chathams_blue: #1a4b84;
+  --tamarillo: #661197;
+  --green_sea: #1A4B34;
+}
+ .git{
+  position: absolute;
+left: 220px;
+ }
+
+.clock {
+  width: 340px;
+  height: 340px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  margin: 100px auto 0px auto;
+  position: relative;
+  border: 20px solid rgba(229, 238, 229, 0.6);
+}
+.center {
+  background-color: red;
+  position: absolute;
+  left: calc(50% - 6px);
+  top: calc(50% - 6px);
+  width:  12px;
+  height: 12px;
+  border-radius: 50%;
+  
+}
+
+.hourHand {
+  width: 10px;
+  height: 75px;
+  background-color: #000;
+  transform-origin: bottom center;
+  border-radius: 4px;
+  position: absolute;
+  top: 75px;
+  left: 145px;
+  transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+  transform: rotate(360deg);
+}
+.minuteHand {
+  width: 5px;
+  height: 120px;
+  background-color: #000;
+  transform-origin: bottom center;
+  border-radius: 4px;
+  position: absolute;
+  top: 30px;
+  left: 147px;
+  transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+  transform: rotate(360deg);
+}
+.secondHand {
+  width: 2px;
+  height: 120px;
+  background-color: red;
+  transform-origin: bottom center;
+  border-radius: 4px;
+  position: absolute;
+  top: 30px;
+  left: 149px;
+  transition: all 0.06s;
+  transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+  transform: rotate(360deg);
+}
+.secondHand span{
+  color: red;
+  position: absolute;
+  font-size: large;
+  font-weight: bold;
+  top: -10px;
+  left: -5.4px;
+}
+.secondHand div{
+  background-color: red;
+  height: 20px;
+  width: 3px;
+  position: relative;
+  left: -0.4px;
+  top: 125px;
+}
+
+.clock ul {
+  list-style: none;
+  padding: 0;
+}
+.clock ul li {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  font-size: 10px;
+  color: #fff;
+}
+.clock ul li:nth-child(1) {
+  font-size: 14px;
+  right: 22%;
+  top: 6.5%;
+}
+.clock ul li:nth-child(2) {
+  font-size: 14px;
+  right: 6%;
+  top: 25%;
+}
+.clock ul li:nth-child(3) {
+  right: 1%;
+  top: calc(50% - 10px);
+  font-size: 20px;
+  font-weight: bold;
+}
+.clock ul li:nth-child(4) {
+  font-size: 14px;
+  right: 6%;
+  top: 69%;
+}
+.clock ul li:nth-child(5) {
+  font-size: 14px;
+  right: 22%;
+  top: 84%;
+}
+.clock ul li:nth-child(6) {
+  right: calc(50% - 10px);
+  top: calc(99% - 20px);
+  font-size: 20px;
+  font-weight: bold;
+}
+.clock ul li:nth-child(7) {
+  font-size: 14px;
+  left: 22%;
+  top: 84%;
+}
+.clock ul li:nth-child(8) {
+  font-size: 14px;
+  left: 6%;
+  top: 69%;
+}
+.clock ul li:nth-child(9) {
+  left: 1%;
+  top: calc(50% - 10px);
+  font-size: 20px;
+  font-weight: bold;
+}
+.clock ul li:nth-child(10) {
+  font-size: 14px;
+  left: 6%;
+  top: 25%;
+}
+.clock ul li:nth-child(11) {
+  font-size: 14px;
+  left: 22%;
+  top: 6.5%;
+}
+.clock ul li:nth-child(12) {
+  right: calc(50% - 10px);
+  top: 1%;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+ nav{
+ text-align: center;
+ position: fixed;
+ top: 0;
+ width: 100%;
+ color: white;
+ padding: 10px 0px;
+}
+
+.dark-light{
+  
+  position: inherit;
+  top: 12px;
+  right: 120px;
+}
+@media (max-width : 500px) {
+  .dark-light{
+    font-size: 10px;
+    position: inherit;
+    top: 12px;
+    right: 10px;
+  }
+  .git{
+    position: absolute;
+  left: 30px;
+   }
+}
+
+.footer-dark, nav, .digital-time, .sethour {
+ 
+  background-color: var(--primary-color);
+  
+}
+.digital-time{
+  border-radius: 16px;
+  color: white;
+  width: 260px;
+  align-items: center;
+ justify-content: center;
+ justify-content: space-evenly;
+ display: flex;
+ border: 10px solid rgba(229, 238, 229, 0.6);
+}
+.hour-type{
+  display: flex;
+  justify-content: center;
+  
+}
+.sethour{
+  text-align: center;
+  margin-top: 10px;
+  
+  padding: 10px 30px;
+  color: white;
+}
+
+.toggle-currency {
+  font-size: 20px;
+}
+
+footer {
+  font: normal normal 600 12px/19px Oswald;
+  letter-spacing: 0.24px;
+  color: #FFFFFF;
+  position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.theme-switch {
+  margin: 0 5px;
+  padding: 10px;
+  font-size: 0.5rem;
+  border: 1px solid #FFFFFF;
+  border-radius: 5px;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.theme-switch-chathams_blue {
+  background-color: var(--chathams_blue);
+}
+
+.theme-switch-chathams_blue:hover {
+box-shadow: 4px 4px 4px var(--chathams_blue);
+}
+
+.theme-switch-tamarillo {
+  background-color: var(--tamarillo);
+}
+
+.theme-switch-tamarillo:hover {
+box-shadow: 4px 4px 4px var(--tamarillo);
+}
+
+.theme-switch-green_sea {
+  background-color: var(--green_sea);
+}
+
+.theme-switch-green_sea:hover {
+box-shadow: 4px 4px 4px var(--green_sea);
+}
